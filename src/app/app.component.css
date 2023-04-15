@@ -1,0 +1,15 @@
+ul {
+  margin: 0;
+  padding: 16px;
+  list-style-type: none;
+  display: flex;
+  gap: 16px;
+  background: #25984c;
+}
+li a{
+  color: white;
+}
+
+li a:active{
+  color: #ece496;
+}
