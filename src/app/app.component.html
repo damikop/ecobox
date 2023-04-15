@@ -1,8 +1,8 @@
-<nav>
+<nav *ngIf="!isRegistrationPage">
   <ul>
-    <li><a routerLink="/home" routerLinkActive="active">HOME</a></li>
-    <li><a routerLink="/login" routerLinkActive="active">LOGIN</a></li>
-    <li><a routerLink="/register" routerLinkActive="active">REGISTER</a></li>
+    <li><a routerLink="/home">HOME</a></li>
+    <li><a (click)="onLoginClicked()" routerLink="/login">LOGIN</a></li>
+    <li><a (click)="onRegisterClicked()" routerLink="/registration">REGISTRATION</a></li>
   </ul>
 </nav>
 
