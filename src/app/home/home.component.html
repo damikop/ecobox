@@ -1,1 +1,22 @@
-<p>home works!</p>
+
+<section class="intro">
+  <div class="intro_img"></div>
+</section>
+
+<form (submit)="submitRequest()">
+  <div>
+    <label>Description:</label>
+    <input class="border rounded" type="text" [(ngModel)]="request.description" name="description">
+  </div>
+  <div>
+    <label>Work Type:</label>
+    <input class="border rounded" type="text" [(ngModel)]="selectedWorkType" (click)="showDropdown()" name="work_type">
+    <ul *ngIf="showDropdownList">
+      <li *ngFor="let item of workTypeList" (click)="selectWorkType(item)">{{item}}</li>
+    </ul>
+  </div>
+  <button class="border rounded" type="submit">Submit</button>
+</form>
+
+
+

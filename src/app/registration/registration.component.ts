@@ -7,6 +7,7 @@ import {AfterViewInit, Component, OnInit, ViewChild} from '@angular/core';
    templateUrl: './registration.component.html',
    styleUrls: ['./registration.component.css']
  })
+
 export class RegistrationComponent {}
 //   // View => Model
 //   userInfo: UserInfo = {

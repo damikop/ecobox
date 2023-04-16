@@ -1,0 +1,84 @@
+/* Стилизация формы заявки */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  margin: 50px auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form label {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.form input[type="text"],
+.form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+  background-color: #0069d9;
+}
+
+/* Стилизация выпадающего списка */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.dropdown-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  background-color: #fff;
+}
+
+.dropdown-options li {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.dropdown-options li:hover {
+  background-color: #f5f5f5;
+}

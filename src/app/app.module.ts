@@ -8,7 +8,7 @@ import { HomeComponent } from './home/home.component';
 import {routes} from "./routes";
 import {FormsModule} from "@angular/forms";
 import { RegistrationComponent } from './registration/registration.component';
-
+import { MatSelectModule } from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,8 @@ import { RegistrationComponent } from './registration/registration.component';
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
-    FormsModule
+    FormsModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
